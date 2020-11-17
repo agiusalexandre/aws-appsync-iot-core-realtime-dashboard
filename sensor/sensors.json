@@ -16,7 +16,7 @@
       "keyPath": "./certs/sensor-fr-par-private.pem.key",
       "certPath": "./certs/sensor-fr-par-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/e4d24a564db661a115649281a74493d9439f74a63be322fef5e3ea956fecd60d",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/f3fd0915a5c93988887610a8ba2ae00c4c6c560d53d5c5b088532e18ff2168dd",
       "clientId": "sensor-fr-par"
     }
   },
@@ -37,7 +37,7 @@
       "keyPath": "./certs/sensor-fr-lyo-private.pem.key",
       "certPath": "./certs/sensor-fr-lyo-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/acdd2a004eb446f4438af26ce7b97b42d67231db3a7ebaf6e04ff15c06b6b5ed",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/9b9e5f2a5dc7159439b77cf7c64a88da4a4d0365ccabb82466a710007ae8ed5c",
       "clientId": "sensor-fr-lyo"
     }
   },
@@ -58,7 +58,7 @@
       "keyPath": "./certs/sensor-fr-mrs-private.pem.key",
       "certPath": "./certs/sensor-fr-mrs-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/2370c9eed20edf12c095ad3204267bef579c65c236e1717de61e1e06a66994e1",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/b3ab897df97da8a3b51b88ff2a6a99c196deb7a052e17a3f3ade1063ed968521",
       "clientId": "sensor-fr-mrs"
     }
   }
