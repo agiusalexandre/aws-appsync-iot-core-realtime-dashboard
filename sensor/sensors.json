@@ -1,122 +1,65 @@
 [
   {
-    "name": "SF Bay - East",
-    "thingTypeName": "WATER_QUALITY_SENSOR",
-    "manufacturer": "Xylem",
+    "name": "Paris - France",
+    "thingTypeName": "TEMPERATURE_SENSOR",
+    "manufacturer": "texasinstrument",
     "model": "WQ201",
     "firmware": "1.30",
-    "frequency": 3000,
+    "frequency": 5000,
     "geo": {
-      "latitude": 37.692625,
-      "longitude": -122.200682
+      "latitude": 48.864716,
+      "longitude": 2.349014,
+      "radius": 500
     },
     "settings": {
-      "host": "",
-      "keyPath": "",
-      "certPath": "",
-      "caPath": "",
-      "certificateArn": "",
-      "clientId": "sensor-sf-east"
+      "host": "a2xdgoyy9aweoz-ats.iot.eu-west-1.amazonaws.com",
+      "keyPath": "./certs/sensor-fr-par-private.pem.key",
+      "certPath": "./certs/sensor-fr-par-certificate.pem.crt",
+      "caPath": "./certs/AmazonRootCA1.pem",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/e4d24a564db661a115649281a74493d9439f74a63be322fef5e3ea956fecd60d",
+      "clientId": "sensor-fr-par"
     }
   },
   {
-    "name": "SF Bay - Southeast",
-    "thingTypeName": "WATER_QUALITY_SENSOR",
-    "manufacturer": "Xylem",
+    "name": "Lyon - France",
+    "thingTypeName": "TEMPERATURE_SENSOR",
+    "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.30",
-    "frequency": 3200,
+    "frequency": 5000,
     "geo": {
-      "latitude": 37.612215,
-      "longitude": -122.162933
+      "latitude": 45.76342,
+      "longitude": 4.834277,
+      "radius": 500
     },
     "settings": {
-      "host": "",
-      "keyPath": "",
-      "certPath": "",
-      "caPath": "",
-      "certificateArn": "",
-      "clientId": "sensor-sf-southeast"
+      "host": "a2xdgoyy9aweoz-ats.iot.eu-west-1.amazonaws.com",
+      "keyPath": "./certs/sensor-fr-lyo-private.pem.key",
+      "certPath": "./certs/sensor-fr-lyo-certificate.pem.crt",
+      "caPath": "./certs/AmazonRootCA1.pem",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/acdd2a004eb446f4438af26ce7b97b42d67231db3a7ebaf6e04ff15c06b6b5ed",
+      "clientId": "sensor-fr-lyo"
     }
   },
   {
-    "name": "SF Bay - Southwest",
-    "thingTypeName": "WATER_QUALITY_SENSOR",
-    "manufacturer": "Xylem",
+    "name": "Marseille - France",
+    "thingTypeName": "TEMPERATURE_SENSOR",
+    "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.30",
-    "frequency": 3400,
+    "frequency": 5000,
     "geo": {
-      "latitude": 37.602464,
-      "longitude": -122.338036
+      "latitude": 43.296398,
+      "longitude": 5.37,
+      "radius": 500
     },
     "settings": {
-      "host": "",
-      "keyPath": "",
-      "certPath": "",
-      "caPath": "",
-      "certificateArn": "",
-      "clientId": "sensor-sf-southwest"
-    }
-  },
-  {
-    "name": "SF Bay - West",
-    "thingTypeName": "WATER_QUALITY_SENSOR",
-    "manufacturer": "Xylem",
-    "model": "WQ201",
-    "firmware": "1.30",
-    "frequency": 3600,
-    "geo": {
-      "latitude": 37.66228,
-      "longitude": -122.36549
-    },
-    "settings": {
-      "host": "",
-      "keyPath": "",
-      "certPath": "",
-      "caPath": "",
-      "certificateArn": "",
-      "clientId": "sensor-sf-west"
-    }
-  },
-  {
-    "name": "SF Bay - Northwest",
-    "thingTypeName": "WATER_QUALITY_SENSOR",
-    "manufacturer": "Xylem",
-    "model": "WQ201",
-    "firmware": "1.30",
-    "frequency": 3800,
-    "geo": {
-      "latitude": 37.751372,
-      "longitude": -122.359999
-    },
-    "settings": {
-      "host": "",
-      "keyPath": "",
-      "certPath": "",
-      "caPath": "",
-      "certificateArn": "",
-      "clientId": "sensor-sf-northwest"
-    }
-  },
-  {
-    "name": "SF Bay - North",
-    "thingTypeName": "WATER_QUALITY_SENSOR",
-    "manufacturer": "Xylem",
-    "model": "WQ201",
-    "firmware": "1.30",
-    "frequency": 4000,
-    "geo": {
-      "latitude": 37.800307,
-      "longitude": -122.354788
-    },
-    "settings": {
-      "host": "",
-      "keyPath": "",
-      "certPath": "",
-      "caPath": "",
-      "certificateArn": "",
-      "clientId": "sensor-sf-north"
+      "host": "a2xdgoyy9aweoz-ats.iot.eu-west-1.amazonaws.com",
+      "keyPath": "./certs/sensor-fr-mrs-private.pem.key",
+      "certPath": "./certs/sensor-fr-mrs-certificate.pem.crt",
+      "caPath": "./certs/AmazonRootCA1.pem",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/2370c9eed20edf12c095ad3204267bef579c65c236e1717de61e1e06a66994e1",
+      "clientId": "sensor-fr-mrs"
     }
   }
 ]

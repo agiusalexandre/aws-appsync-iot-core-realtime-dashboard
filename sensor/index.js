@@ -35,53 +35,80 @@ async function run(sensor) {
         timestamp: new Date().getTime()
     }
 
-    device.on('connect', function() {
-    
+    device.on('connect', function () {
+
         console.log('connected to IoT Hub');
-    
+
         //publish the shadow document for the sensor
         var topic = SHADOW_TOPIC.replace('[thingName]', sensor.settings.clientId);
-    
+
         shadowDocument.state.reported.name = sensor.name;
         shadowDocument.state.reported.enabled = true;
         shadowDocument.state.reported.geo.latitude = sensor.geo.latitude;
         shadowDocument.state.reported.geo.longitude = sensor.geo.longitude;
-    
-        device.publish(topic, JSON.stringify(shadowDocument)); 
-    
-        console.log('published to shadow topic ' + topic + ' ' + JSON.stringify(shadowDocument));
-    
-        //publish new value readings based on value_rate
-        setInterval(function(){
 
+        device.publish(topic, JSON.stringify(shadowDocument));
+
+        console.log('published to shadow topic ' + topic + ' ' + JSON.stringify(shadowDocument));
+        var first = true;
+        var randomLocation = getRandomLocation(sensor.geo.latitude, sensor.geo.longitude, sensor.geo.radius);
+        //publish new value readings based on value_rate
+        setInterval(function () {
+            if (!first) {
+                randomLocation = getRandomLocation(randomLocation.latitude, randomLocation.longitude, sensor.geo.radius);
+            }
+            first = false;
             //calculate randome values for each sensor reading
             msg.pH = RandomValue(50, 100) / 10;
             msg.temperature = RandomValue(480, 570) / 10;
             msg.salinity = RandomValue(200, 350) / 10;
             msg.disolvedO2 = RandomValue(40, 120) / 10;
-
+            msg.latitude = randomLocation.latitude;
+            msg.longitude = randomLocation.longitude;
             msg.timestamp = new Date().getTime();
+
 
             //publish the sensor reading message
             var topic = VALUE_TOPIC.replace('[thingName]', sensor.settings.clientId);
 
-            device.publish(topic, JSON.stringify(msg)); 
+            device.publish(topic, JSON.stringify(msg));
 
             console.log('published to telemetry topic ' + topic + ' ' + JSON.stringify(msg));
 
         }, sensor.frequency);
     });
 
-    device.on('error', function(error) {
+    device.on('error', function (error) {
         console.log('Error: ', error);
     });
 }
 
-function RandomValue (min, max) {
-    return Math.floor(Math.random() * (max - min + 1) ) + min;
+function RandomValue(min, max) {
+    return Math.floor(Math.random() * (max - min + 1)) + min;
 }
+
+
+var getRandomLocation = function getRandomLocation(latitude, longitude, radiusInMeters) {
+
+    var r = radiusInMeters / 111300 // = 100 meters
+        , y0 = latitude
+        , x0 = longitude
+        , u = Math.random()
+        , v = Math.random()
+        , w = r * Math.sqrt(u)
+        , t = 2 * Math.PI * v
+        , x = w * Math.cos(t)
+        , y1 = w * Math.sin(t)
+        , x1 = x / Math.cos(y0)
+
+    return {
+        latitude: y0 + y1,
+        longitude: x0 + x1
+    }
+};
 
 //run simulation for each sensor
 sensors.forEach((sensor) => {
     run(sensor);
 })
+

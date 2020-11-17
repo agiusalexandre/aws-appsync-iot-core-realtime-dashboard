@@ -11,6 +11,8 @@ export const onCreateSensorValue = /* GraphQL */ `
       temperature
       salinity
       disolvedO2
+      latitude
+      longitude
       status
       timestamp
       createdAt
@@ -27,6 +29,8 @@ export const onCreateSensorValues = /* GraphQL */ `
       temperature
       salinity
       disolvedO2
+      latitude
+      longitude
       status
       timestamp
       createdAt

@@ -12,6 +12,8 @@ type SensorValue @model (subscriptions: null)
   temperature: Float!
   salinity: Float!
   disolvedO2: Float!
+  latitude: Float!
+  longitude: Float!
   status: Int!
   timestamp: AWSTimestamp!
 }

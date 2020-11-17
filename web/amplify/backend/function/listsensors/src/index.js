@@ -15,7 +15,7 @@ exports.handler = async (event) => {
     //you must have fleet indexing enabled in IoT Core with REGISTRY_AND_SHADOW indexed
     
     var params = {
-        queryString: 'shadow.reported.name:* AND thingTypeName:WATER_QUALITY_SENSOR'
+        queryString: 'shadow.reported.name:* AND thingTypeName:TEMPERATURE_SENSOR'
     };
 
     try {

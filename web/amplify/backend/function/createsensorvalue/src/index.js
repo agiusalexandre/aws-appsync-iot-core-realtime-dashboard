@@ -35,6 +35,8 @@ exports.handler = async (event) => {
       temperature: event.data.temperature,
       salinity: event.data.salinity,
       disolvedO2: event.data.disolvedO2,
+      latitude: event.data.latitude,
+      longitude: event.data.longitude,
       status: status,
       timestamp: event.data.timestamp
     }

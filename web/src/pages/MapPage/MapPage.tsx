@@ -32,7 +32,9 @@ interface ISensorsSubscriptionResponse {
     data: {
       onCreateSensorValues: {
         sensorId: string,
-        status: number
+        status: number,
+        latitude: number,
+        longitude: number
       }
     }
   }
@@ -42,15 +44,15 @@ const MapPage: React.FC = () => {
   
   const history = useHistory();
   const classes = useStyles();
-  const maxZoom = 10;
+  const maxZoom = 1;
 
   //state variables
   const [viewPort, setViewPort] = useState<IViewPort>({
-        latitude: 37.666743,
-        longitude: -122.185435,
+        latitude: 48.864716,
+        longitude: 2.349014,
         zoom: maxZoom,
-        bearing: 0,
-        pitch: 0
+        bearing: 1,
+        pitch: 1
       }
   ); 
 
@@ -67,7 +69,7 @@ const MapPage: React.FC = () => {
       try {
 
         const response = await GetSensors();
-
+        console.log(response);
         if (response) {
           setSensors(response);
           console.log('sensors retrived');
@@ -99,8 +101,12 @@ const MapPage: React.FC = () => {
             var newSensors = [...sensors];
         
             for (let item of newSensors) {
+              console.log(item);
               if (item.sensorId === response.value.data.onCreateSensorValues.sensorId){
                 item.status = response.value.data.onCreateSensorValues.status;
+                item.geo.latitude = response.value.data.onCreateSensorValues.latitude;
+                item.geo.longitude = response.value.data.onCreateSensorValues.longitude;
+
                 break;
               }
             }
