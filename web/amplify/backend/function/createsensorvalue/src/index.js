@@ -31,10 +31,8 @@ exports.handler = async (event) => {
   const item = {
     input: {
       sensorId: event.sensorId,
-      pH: event.data.pH,
       temperature: event.data.temperature,
-      salinity: event.data.salinity,
-      disolvedO2: event.data.disolvedO2,
+      pressure: event.data.pressure,
       latitude: event.data.latitude,
       longitude: event.data.longitude,
       status: status,

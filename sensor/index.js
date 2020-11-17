@@ -5,7 +5,7 @@ var sensors = require('./sensors.json');
 
 //constants used in the application
 const SHADOW_TOPIC = "$aws/things/[thingName]/shadow/update";
-const VALUE_TOPIC = "dt/bay-health/SF/[thingName]/sensor-value"; //topic to which sensor values will be published
+const VALUE_TOPIC = "dt/europe/FR/[thingName]/sensor-value"; //topic to which sensor values will be published
 
 //shadow document to be transmitted at statup
 var shadowDocument = {
@@ -28,10 +28,8 @@ async function run(sensor) {
 
     //create a placeholder for the message
     var msg = {
-        pH: 0,
         temperature: 0,
-        salinity: 0,
-        disolvedO2: 0,
+        pressure: 0,
         timestamp: new Date().getTime()
     }
 
@@ -59,10 +57,8 @@ async function run(sensor) {
             }
             first = false;
             //calculate randome values for each sensor reading
-            msg.pH = RandomValue(50, 100) / 10;
             msg.temperature = RandomValue(480, 570) / 10;
-            msg.salinity = RandomValue(200, 350) / 10;
-            msg.disolvedO2 = RandomValue(40, 120) / 10;
+            msg.pressure = RandomValue(200, 350) / 10;
             msg.latitude = randomLocation.latitude;
             msg.longitude = randomLocation.longitude;
             msg.timestamp = new Date().getTime();

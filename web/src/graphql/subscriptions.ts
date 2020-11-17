@@ -7,10 +7,8 @@ export const onCreateSensorValue = /* GraphQL */ `
     onCreateSensorValue(sensorId: $sensorId) {
       id
       sensorId
-      pH
       temperature
-      salinity
-      disolvedO2
+      pressure
       latitude
       longitude
       status
@@ -25,10 +23,8 @@ export const onCreateSensorValues = /* GraphQL */ `
     onCreateSensorValues {
       id
       sensorId
-      pH
       temperature
-      salinity
-      disolvedO2
+      pressure
       latitude
       longitude
       status

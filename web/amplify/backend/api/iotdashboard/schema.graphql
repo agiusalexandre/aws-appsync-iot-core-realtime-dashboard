@@ -8,10 +8,8 @@ type SensorValue @model (subscriptions: null)
 {
   id: ID!
   sensorId: String!
-  pH: Float!
   temperature: Float!
-  salinity: Float!
-  disolvedO2: Float!
+  pressure: Float!
   latitude: Float!
   longitude: Float!
   status: Int!

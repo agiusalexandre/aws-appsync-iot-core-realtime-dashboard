@@ -35,10 +35,8 @@ export const getSensorValue = /* GraphQL */ `
     getSensorValue(id: $id) {
       id
       sensorId
-      pH
       temperature
-      salinity
-      disolvedO2
+      pressure
       latitude
       longitude
       status
@@ -58,10 +56,8 @@ export const listSensorValues = /* GraphQL */ `
       items {
         id
         sensorId
-        pH
         temperature
-        salinity
-        disolvedO2
+        pressure
         latitude
         longitude
         status
