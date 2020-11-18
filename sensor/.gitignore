@@ -11,3 +11,5 @@ yarn-error.log
 # AWS IOT thing certificates
 certs/*.crt
 certs/*.key
+certs/MRS/*.crt
+certs/MRS/*.key
