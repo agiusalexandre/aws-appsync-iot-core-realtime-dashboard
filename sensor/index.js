@@ -57,7 +57,7 @@ async function run(sensor) {
             }
             first = false;
             //calculate randome values for each sensor reading
-            msg.temperature = RandomValue(480, 570) / 10;
+            msg.temperature = RandomValue(50, 110) / 10;
             msg.pressure = RandomValue(200, 350) / 10;
             msg.latitude = randomLocation.latitude;
             msg.longitude = randomLocation.longitude;

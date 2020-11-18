@@ -25,10 +25,8 @@ interface ISensorSubscriptionResponse {
     data: {
       onCreateSensorValue: {
         name: string,
-        pH: number,
         temperature: number,
-        salinity: number,
-        disolvedO2: number
+        pressure: number
       }
     }
   }
@@ -40,10 +38,9 @@ const SensorPage: React.FC = () => {
   const { id } = useParams();
 
   const [name, setName] = useState("Fetching sensor data...");
-  const [pH, setPH] = useState<number | null>(null);
+  //const [pH, setPH] = useState<number | null>(null);
   const [temperature, setTemperature] = useState<number | null>(null);
-  const [salinity, setSalinity] = useState<number | null>(null);
-  const [disolvedO2, setDisolvedO2] = useState<number | null>(null);
+  const [pressure, setPressure] = useState<number | null>(null);
   const [readyToSubscribe, setReadyToSubscribe] = useState(false);
 
   //fetch sensor to get name
@@ -87,10 +84,10 @@ const SensorPage: React.FC = () => {
           //update the sensor's status in state
           if (response.value.data.onCreateSensorValue) {
 
-            setPH(response.value.data.onCreateSensorValue.pH);
+            //setPH(response.value.data.onCreateSensorValue.pH);
             setTemperature(response.value.data.onCreateSensorValue.temperature);
-            setSalinity(response.value.data.onCreateSensorValue.salinity);
-            setDisolvedO2(response.value.data.onCreateSensorValue.disolvedO2);
+            setPressure(response.value.data.onCreateSensorValue.pressure);
+            //setDisolvedO2(response.value.data.onCreateSensorValue.disolvedO2);
 
             console.log('sensor value received');
           }
@@ -122,14 +119,6 @@ const SensorPage: React.FC = () => {
         <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
           <NumericWidget
             mode={WIDGET_MODE.CURRENT}
-            title="pH"
-            value={pH}
-          />
-        </Grid>
-
-        <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
-          <NumericWidget
-            mode={WIDGET_MODE.CURRENT}
             title="Temperature"
             value={temperature}
           />
@@ -138,25 +127,8 @@ const SensorPage: React.FC = () => {
         <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
           <NumericWidget
             mode={WIDGET_MODE.CURRENT}
-            title="Salinity"
-            value={salinity}
-          />
-        </Grid>
-
-        <Grid item xs={12} sm={6} md={3} lg={3} xl={3}>
-          <NumericWidget
-            mode={WIDGET_MODE.CURRENT}
-            title="Disolved O2"
-            value={disolvedO2}
-          />
-        </Grid>
-      </Grid>
-
-      <Grid container spacing={4}>
-        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-        <LineChartWidget
-            title="pH"
-            value={pH}
+            title="Pressure"
+            value={pressure}
           />
         </Grid>
       </Grid>
@@ -173,20 +145,13 @@ const SensorPage: React.FC = () => {
       <Grid container spacing={4}>
         <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
         <LineChartWidget
-            title="Salinity"
-            value={salinity}
+            title="Pressure"
+            value={pressure}
           />
         </Grid>
       </Grid>
 
-      <Grid container spacing={4}>
-        <Grid item xs={12} sm={12} md={12} lg={12} xl={12}>
-        <LineChartWidget
-            title="Disolved O2"
-            value={disolvedO2}
-          />
-        </Grid>
-      </Grid>
+
 
     </Container>
   );
