@@ -12,7 +12,7 @@ const REGION = AWS.config.region || 'us-east-1';
 const PROFILE = process.env.AWS_PROFILE || 'default';
 
 //constants used in the app - do not change
-const SENSORS_FILE = './sensors.json';
+const SENSORS_FILE = './sensors-ca.json';
 
 //open sensor definition file
 var sensors = require(SENSORS_FILE);

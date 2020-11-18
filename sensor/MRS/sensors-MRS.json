@@ -1,0 +1,22 @@
+[
+  {
+    "name": "Marseille - France_home",
+    "thingTypeName": "TEMPERATURE_SENSOR",
+    "manufacturer": "Raspberry",
+    "model": "WQ201",
+    "firmware": "1.12",
+    "frequency": 5000,
+    "geo": {
+      "latitude": 43.2835907,
+      "longitude": 5.3607719,
+      "radius": 500
+    },
+    "settings": {
+      "host": "a2xdgoyy9aweoz-ats.iot.eu-west-1.amazonaws.com",
+      "keyPath": "./../certs/MRS/98a210ced2-private.pem.key",
+      "certPath": "./../certs/MRS/98a210ced2-certificate.pem.crt",
+      "caPath": "./../certs/AmazonRootCA1.pem",
+      "clientId": "raspberry"
+    }
+  }
+]

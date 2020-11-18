@@ -11,7 +11,7 @@ exports.handler = async (event) => {
 
     var resultArray = [];
 
-    //query all sensors that have reported a shadow and of type water quality sensor
+    //query all sensors that have reported a shadow and of type temperature sensor
     //you must have fleet indexing enabled in IoT Core with REGISTRY_AND_SHADOW indexed
     
     var params = {

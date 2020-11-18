@@ -6,7 +6,7 @@ const fs = require('fs').promises;
 const fs2 = require('fs');
 
 //if a region is not specified in your local AWS config, it will default to us-east-1
-const REGION = AWS.config.region || 'us-east-1';
+const REGION = AWS.config.region || 'eu-west-1';
 
 //if you wish to use a profile other than default, set an AWS_PROFILE environment variable when you run this app
 //for example:
