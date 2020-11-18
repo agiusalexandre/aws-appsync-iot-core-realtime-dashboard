@@ -3,6 +3,8 @@ process.env.AWS_SDK_LOAD_CONFIG = true;
 const AWS = require('aws-sdk');
 const fs = require('fs').promises;
 
+const fs2 = require('fs');
+
 //if a region is not specified in your local AWS config, it will default to us-east-1
 const REGION = AWS.config.region || 'us-east-1';
 
@@ -22,46 +24,54 @@ var sensors = require(SENSORS_FILE);
 const policyDocument = require(POLICY_FILE);
 
 //use the credentials from the AWS profile
-var credentials = new AWS.SharedIniFileCredentials({profile: PROFILE});
+var credentials = new AWS.SharedIniFileCredentials({ profile: PROFILE });
 AWS.config.credentials = credentials;
 
 AWS.config.update({
-    region: REGION
+  region: REGION
 });
 
-async function createSensors(){
+//Chunk
+
+const SENSORS_CHUNK_SIZE = 10;
+
+async function createSensors() {
 
   try {
 
     var iot = new AWS.Iot();
-  
+
     // get the regional IOT endpoint
-    var params = { endpointType: 'iot:Data-ATS'};
+    var params = { endpointType: 'iot:Data-ATS' };
     var result = await iot.describeEndpoint(params).promise();
     const host = result.endpointAddress;
-  
+
     //enable thing fleet indexing to enable searching things
     params = {
-      thingIndexingConfiguration: { 
-      thingIndexingMode: "REGISTRY_AND_SHADOW"
+      thingIndexingConfiguration: {
+        thingIndexingMode: "REGISTRY_AND_SHADOW"
       }
     }
 
     result = await iot.updateIndexingConfiguration(params).promise();
 
-    //iterate over all sensors and create policies, certs, and things
-    sensors.forEach(async (sensor) => {
+    async function chunckCreate(sensors) {
+
+      //iterate over all sensors and create policies, certs, and things
+      const myReturn = await sensors.forEach(async (sensor) => {
+
+        console.log("Sensor Name : " + sensor.name);
 
         //set the iot core endpoint
         sensor.settings.host = host;
-    
+
         //create the IOT policy
         var policyName = 'Policy-' + sensor.settings.clientId;
-        var policy = { policyName: policyName, policyDocument: JSON.stringify(policyDocument)};
+        var policy = { policyName: policyName, policyDocument: JSON.stringify(policyDocument) };
         result = await iot.createPolicy(policy).promise()
 
         //create the certificates
-        result = await iot.createKeysAndCertificate({setAsActive:true}).promise();
+        result = await iot.createKeysAndCertificate({ setAsActive: true }).promise();
         sensor.settings.certificateArn = result.certificateArn;
         const certificateArn = result.certificateArn;
         const certificatePem = result.certificatePem;
@@ -79,7 +89,7 @@ async function createSensors(){
 
         //save the AWS root certificate
         sensor.settings.caPath = CERT_FOLDER + ROOT_CA_FILE;
-      
+
         //create the thing type
         params = {
           thingTypeName: sensor.thingTypeName
@@ -103,24 +113,49 @@ async function createSensors(){
         await iot.createThing(params).promise();
 
         //attach policy to certificate
-        await iot.attachPolicy({ policyName: policyName, target: certificateArn}).promise();
-            
+        await iot.attachPolicy({ policyName: policyName, target: certificateArn }).promise();
+
         //attach thing to certificate
-        await iot.attachThingPrincipal({thingName: sensor.settings.clientId, principal: certificateArn}).promise();
+        await iot.attachThingPrincipal({ thingName: sensor.settings.clientId, principal: certificateArn }).promise();
 
-        //save the updated settings file
-        let data = JSON.stringify(sensors, null, 2);
-        await fs.writeFile(SENSORS_FILE, data);
-    })
+      });
 
-    //display results
-    console.log('IoT Things provisioned');
-    console.log('AWS Region: ' + REGION);
-    console.log('AWS Profile: ' + PROFILE);
+    };
 
-    sensors.forEach((sensor) => {
-      console.log('Thing Name: ' + sensor.settings.clientId);
-    })
+    async function waitChunckedCreation(sensorChunk) {
+      await chunckCreate(sensorChunk);
+    };
+
+    var sensorChunckedList = chunkArray(sensors, SENSORS_CHUNK_SIZE);
+
+    const delay = (amount = number) => {
+      return new Promise((resolve) => {
+        setTimeout(resolve, amount);
+      });
+    }
+
+    // Call start
+    (async () => {
+      for (const sensorChunk of sensorChunckedList) {
+        const contents = await waitChunckedCreation(sensorChunk);
+        await delay(4000);
+      }
+
+      var merged = [].concat.apply([], sensorChunckedList);
+
+      let data = JSON.stringify(merged, null, 2);
+      await fs.writeFile('sensors-ca.json', data);
+
+      //display results
+      console.log('IoT Things provisioned');
+      console.log('AWS Region: ' + REGION);
+      console.log('AWS Profile: ' + PROFILE);
+
+      sensors.forEach((sensor) => {
+        console.log('Thing Name: ' + sensor.settings.clientId);
+      })
+
+    })();
 
   }
   catch (err) {
@@ -130,5 +165,27 @@ async function createSensors(){
   }
 
 }
+
+
+/**
+ * Returns an array with arrays of the given size.
+ *
+ * @param myArray {Array} array to split
+ * @param chunk_size {Integer} Size of every group
+ */
+function chunkArray(myArray, chunk_size) {
+  var index = 0;
+  var arrayLength = myArray.length;
+  var tempArray = [];
+
+  for (index = 0; index < arrayLength; index += chunk_size) {
+    myChunk = myArray.slice(index, index + chunk_size);
+    // Do something if you want with the group
+    tempArray.push(myChunk);
+  }
+
+  return tempArray;
+}
+
 
 createSensors();

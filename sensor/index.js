@@ -1,7 +1,7 @@
 const awsIot = require('aws-iot-device-sdk');
 
 //load the sensors file that contains the location of the device certificates and the clientId of the sensor
-var sensors = require('./sensors.json');
+var sensors = require('./sensors-ca.json');
 
 //constants used in the application
 const SHADOW_TOPIC = "$aws/things/[thingName]/shadow/update";
