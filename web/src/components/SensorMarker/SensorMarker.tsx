@@ -1,7 +1,7 @@
 import React from 'react';
 import 'mapbox-gl/dist/mapbox-gl.css'
 import { Marker } from 'react-map-gl';
-import FiberManualRecordIcon from '@material-ui/icons/FiberManualRecord';
+import LocalShippingIcon from '@material-ui/icons/LocalShipping';
 
 interface IProps {
     id: string,
@@ -20,7 +20,7 @@ const SensorMarker: React.FC<IProps> = (props) => {
             longitude={props.longitude}
             latitude={props.latitude}
         >
-            <FiberManualRecordIcon 
+            <LocalShippingIcon 
                 fontSize="small" 
                 style={{ color: props.color }}
                 onClick={()=>props.onSensorClick(props.id)} 

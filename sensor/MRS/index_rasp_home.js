@@ -38,6 +38,7 @@ async function run(sensor) {
 
     device.on('connect', function () {
 
+
         //publish the shadow document for the sensor
         var topic = SHADOW_TOPIC.replace('[thingName]', sensor.settings.clientId);
 
@@ -52,7 +53,7 @@ async function run(sensor) {
         //publish new value readings based on value_rate
         setInterval(function () {
             //calculate randome values for each sensor reading
-            msg.temperature = 5;
+            msg.temperature = 100;
             msg.pressure = 50;
             msg.latitude = sensor.geo.latitude;
             msg.longitude = sensor.geo.longitude;

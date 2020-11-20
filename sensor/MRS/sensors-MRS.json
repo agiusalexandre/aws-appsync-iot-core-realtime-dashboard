@@ -5,7 +5,7 @@
     "manufacturer": "Raspberry",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 5000,
+    "frequency": 20000,
     "geo": {
       "latitude": 43.2835907,
       "longitude": 5.3607719,
@@ -13,10 +13,10 @@
     },
     "settings": {
       "host": "a2xdgoyy9aweoz-ats.iot.eu-west-1.amazonaws.com",
-      "keyPath": "./../certs/MRS/98a210ced2-private.pem.key",
-      "certPath": "./../certs/MRS/98a210ced2-certificate.pem.crt",
+      "keyPath": "./../certs/MRS/c5e285326a-private.pem.key",
+      "certPath": "./../certs/MRS/c5e285326a-certificate.pem.crt",
       "caPath": "./../certs/AmazonRootCA1.pem",
-      "clientId": "raspberry"
+      "clientId": "octankNotification"
     }
   }
 ]

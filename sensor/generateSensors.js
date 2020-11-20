@@ -13,8 +13,8 @@ const sensors = [
             "name": "France",
             "cities": [{
                 "name": "Paris - France",
-                "frequency": 10000,
-                "sensors": 1,
+                "frequency": 1800000,
+                "sensors": 10,
                 "geo": {
                     "latitude": 48.864716,
                     "longitude": 2.349014,
@@ -24,8 +24,8 @@ const sensors = [
             },
             {
                 "name": "Lyon - France",
-                "frequency": 10000,
-                "sensors": 1,
+                "frequency": 1800000,
+                "sensors": 10,
                 "geo": {
                     "latitude": 45.76342,
                     "longitude": 4.834277,
@@ -35,8 +35,8 @@ const sensors = [
             },
             {
                 "name": "Nantes - France",
-                "frequency": 10000,
-                "sensors": 1,
+                "frequency": 1800000,
+                "sensors": 10,
                 "geo": {
                     "latitude": 47.2382007,
                     "longitude": -1.6300958,
@@ -49,7 +49,7 @@ const sensors = [
             "name": "UK",
             "cities": [{
                 "name": "Londres - England",
-                "frequency": 10000,
+                "frequency": 3600000,
                 "sensors": 1,
                 "geo": {
                     "latitude": 51.5253176,
@@ -79,7 +79,7 @@ for (var i = 0; i < sensors.length; i++) {
                     "manufacturer": SENSOR_MANUFACTURER,
                     "model": SENSOR_MODEL,
                     "firmware": SENSOR_FIRMWARE,
-                    "frequency": 5000,
+                    "frequency": city.frequency,
                     "geo": {
                         "latitude": city.geo.latitude,
                         "longitude": city.geo.longitude,

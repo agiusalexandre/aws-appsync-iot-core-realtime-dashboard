@@ -146,7 +146,7 @@ const MapPage: React.FC = () => {
         {...viewPort}
         width="100vw"
         height="100vh"
-        mapStyle="mapbox://styles/mapbox/dark-v9"
+        mapStyle="mapbox://styles/mapbox/streets-v11"
         onViewportChange={updateViewPort}
         mapboxApiAccessToken={settings.mapboxApiAccessToken}
       >

@@ -4,12 +4,12 @@
     {
       "Effect": "Allow",
       "Action": "iot:Connect",
-      "Resource": "*"
+      "Resource": "arn:aws:iot:eu-west-1:081895476357:client/${iot:ClientId}"
     },
     {
       "Effect": "Allow",
       "Action": "iot:Publish",
-      "Resource": "*"
+      "Resource": "arn:aws:iot:eu-west-1:081895476357:topic/dt/europe/FR/${iot:ClientId}/sensor-value"
     }
   ]
 }
