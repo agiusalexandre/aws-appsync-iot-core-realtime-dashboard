@@ -10,6 +10,11 @@
       "Effect": "Allow",
       "Action": "iot:Publish",
       "Resource": "arn:aws:iot:eu-west-1:081895476357:topic/dt/europe/FR/${iot:ClientId}/sensor-value"
+    },
+    {
+      "Effect": "Allow",
+      "Action": "iot:Publish",
+      "Resource": "arn:aws:iot:eu-west-1:081895476357:topic/$aws/things/${iot:ClientId}/shadow/update"
     }
   ]
 }
