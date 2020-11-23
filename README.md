@@ -1,10 +1,11 @@
 # aws-appsync-iot-core-realtime-dashboard
 
-This application demonstrates a web application dashboard receiving real-time updates from a series of IoT sensors.  It depicts a fictitious set of pH sensors deployed around the San Francisco Bay. The solution is built with React, AWS AppSync, and AWS IoT Core technologies.
+This application demonstrates a web application dashboard receiving real-time updates from a series of IoT sensors.  It depicts a fictitious set of temperature sensors deployed around Europe. The solution is built with React, AWS AppSync, and AWS IoT Core technologies. 
+Different IoT Simulators and real integration with M5StickC ESP32 IoT Development kit is also described.
 
 ![Image description](images/map.jpg)
 
-The sensors are represented as the colored dots.  Their color will fluxuate between red, green, and yellow based on the messages received from the sensors.
+The sensors are represented as the colored vehicles.  Their color will fluxuate between red, green, and yellow based on the messages received from the sensors.
 
 Click on a sensor to view the detailed values received in realtime from that specific sensor.
 
@@ -16,7 +17,7 @@ Click on a sensor to view the detailed values received in realtime from that spe
 
 1. The sensor component is developed with the AWS IoT Device SDK for JavaScript.  The sensors are registered as _Things_ in IoT Core and publish random values to the Cloud on a configurable frequency.  Metadata about each sensor, such as its geolocation, is stored in a _Thing Shadow_.
 
-2. Rules in IoT Core subscribe to the message topic and forward the JSON payload to a Lambda function and the IoT Analytics pipeline.
+2. Rules in IoT Core subscribe to the message topic and forward the JSON payload to a Lambda function, he IoT Analytics pipeline and raw bucket.
 
 3. The Node.js Lambda function executes a GraphQL mutation in AppSync.  The mutation saves the sensor's value in DynamoDB and broadcasts the value in real-time to the web dashboard. The Lambda function uses an IAM role and policy to obtain permissions to interact with AppSync.
 
