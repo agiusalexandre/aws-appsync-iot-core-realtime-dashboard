@@ -1,2 +1,0 @@
-$aws/things/sensor-fr-par_0/shadow/update {"state":{"reported":{"name":"Paris - France_0","enabled":true,"geo":{"latitude":48.864716,"longitude":2.349014}}}}
-$aws/things/fr-mrs-rasp-home/shadow/update {"state":{"reported":{"name":"Marseille - France_home","enabled":true,"geo":{"latitude":43.2835907,"longitude":5.3607719}}}}
