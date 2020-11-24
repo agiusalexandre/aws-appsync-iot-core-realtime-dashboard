@@ -1,3 +1,6 @@
+
+#include <MQTT.h>
+
 #include "secrets.h"
 #include <WiFiClientSecure.h>
 #include <MQTTClient.h>
@@ -25,6 +28,8 @@
 
 WiFiClientSecure net = WiFiClientSecure();
 MQTTClient client = MQTTClient(256);
+unsigned long lastMillis = 0;
+unsigned long mqttPushTime = 360000; 
 
 
 uint16_t result;
@@ -82,7 +87,7 @@ void publishShadowMessage()
   geoObject["longitude"] = "5.3607719";
 
   JsonObject reportedObject  = docReported.createNestedObject("reported");
-  reportedObject["name"] = "MyNewESP32";
+  reportedObject["name"] = "Octank_ESP32_EUR_FR_MRS";
   reportedObject["enabled"] = "true";
   reportedObject["geo"] = geoObject;
 
@@ -124,7 +129,8 @@ void publishMessage(float temperature)
   doc["timestamp"] = millis();
   doc["latitude"] = "43.2835907";
   doc["longitude"] = "5.3607719";
-  //doc["sensor_a0"] = analogRead(0);
+  doc["status"] = "1";
+
   
   char jsonBuffer[512];
   serializeJson(doc, jsonBuffer); // print to client
@@ -135,7 +141,7 @@ void publishMessage(float temperature)
   Serial.println(jsonBuffer);
 }
 
-float getTemp(){
+void displayAndPushTemp(){
 
   Wire.beginTransmission(0x5A);          // Send Initial Signal and I2C Bus Address
   Wire.write(0x07);                      // Send data only once and add one address automatically.
@@ -168,20 +174,19 @@ float getTemp(){
    
  }
 
-  // Send Temps a WebService for statistiques    
-
+  // publish a message roughly every second.
+  if (millis() - lastMillis > mqttPushTime) {
+    lastMillis = millis();
+    publishMessage(temperature);
+  }
   delay(500);
   M5.update();
 
-  return temperature;
 }
+
 
 void messageHandler(String &topic, String &payload) {
   Serial.println("incoming: " + topic + " - " + payload);
-
-//  StaticJsonDocument<200> doc;
-//  deserializeJson(doc, payload);
-//  const char* message = doc["message"];
 }
 
 void setup() {
@@ -192,8 +197,9 @@ void setup() {
 }
 
 void loop() {
-  publishMessage(getTemp());
+  
   client.loop();
-  //delay(1000);
-  delay(1800000);
+
+  displayAndPushTemp();
+ 
 }

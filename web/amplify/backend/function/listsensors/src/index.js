@@ -14,8 +14,12 @@ exports.handler = async (event) => {
     //query all sensors that have reported a shadow and of type temperature sensor
     //you must have fleet indexing enabled in IoT Core with REGISTRY_AND_SHADOW indexed
     
+            //queryString: 'shadow.reported.name:* AND shadow.reported.geo.latitude: [ ' + latitudeFrom + ' TO ' + latitudeTo + ' ] AND shadow.reported.geo.longitude: [ ' + longitudeFrom + ' TO ' + longitudeTo + ' ] AND thingTypeName:TEMPERATURE_SENSOR',
+            
+
     var params = {
-        queryString: 'shadow.reported.name:* AND thingTypeName:TEMPERATURE_SENSOR'
+        queryString: 'shadow.reported.name:* AND thingTypeName:TEMPERATURE_SENSOR',
+        maxResults: 100
     };
 
     try {

@@ -35,7 +35,7 @@ exports.handler = async (event) => {
       pressure: event.data.pressure,
       latitude: event.data.latitude,
       longitude: event.data.longitude,
-      status: status,
+      status: event.data.status,
       timestamp: event.data.timestamp
     }
   };

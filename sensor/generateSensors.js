@@ -13,7 +13,7 @@ const sensors = [
             "name": "France",
             "cities": [{
                 "name": "Paris - France",
-                "frequency": 1800000,
+                "frequency": 60000,
                 "sensors": 10,
                 "geo": {
                     "latitude": 48.864716,
@@ -24,7 +24,7 @@ const sensors = [
             },
             {
                 "name": "Lyon - France",
-                "frequency": 1800000,
+                "frequency": 60000,
                 "sensors": 10,
                 "geo": {
                     "latitude": 45.76342,
@@ -35,22 +35,45 @@ const sensors = [
             },
             {
                 "name": "Nantes - France",
-                "frequency": 1800000,
+                "frequency": 60000,
                 "sensors": 10,
                 "geo": {
                     "latitude": 47.2382007,
                     "longitude": -1.6300958,
                     "radius": 500
                 },
-                "clientId": "sensor-fr-mrs"
-            }]
+                "clientId": "sensor-fr-nan"
+            },
+            {
+                "name": "Lille - France",
+                "frequency": 60000,
+                "sensors": 10,
+                "geo": {
+                    "latitude": 50.6310465,
+                    "longitude": 2.9771209,
+                    "radius": 500
+                },
+                "clientId": "sensor-fr-lil"
+            },
+            {
+                "name": "Toulouse - France",
+                "frequency": 60000,
+                "sensors": 10,
+                "geo": {
+                    "latitude": 43.6006785,
+                    "longitude": 1.3626298,
+                    "radius": 500
+                },
+                "clientId": "sensor-fr-tou"
+            }
+        ]
         },
         {
             "name": "UK",
             "cities": [{
                 "name": "Londres - England",
-                "frequency": 3600000,
-                "sensors": 1,
+                "frequency": 60000,
+                "sensors": 10,
                 "geo": {
                     "latitude": 51.5253176,
                     "longitude": -0.1588742,

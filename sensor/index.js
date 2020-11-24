@@ -30,7 +30,8 @@ async function run(sensor) {
     var msg = {
         temperature: 0,
         pressure: 0,
-        timestamp: new Date().getTime()
+        timestamp: new Date().getTime(),
+        status: 0
     }
 
     device.on('connect', function () {
@@ -62,6 +63,7 @@ async function run(sensor) {
             msg.latitude = randomLocation.latitude;
             msg.longitude = randomLocation.longitude;
             msg.timestamp = new Date().getTime();
+            msg.status = Math.floor(Math.random() * 3) + 1;
 
 
             //publish the sensor reading message

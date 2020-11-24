@@ -3,8 +3,17 @@
   "Statement": [
     {
       "Effect": "Allow",
-      "Action": "iot:Connect",
-      "Resource": "arn:aws:iot:eu-west-1:081895476357:client/${iot:ClientId}"
+      "Action": [
+        "iot:Connect"
+      ],
+      "Resource": [
+        "arn:aws:iot:eu-west-1:081895476357:client/${iot:ClientId}"
+      ],
+      "Condition": {
+        "Bool": {
+          "iot:Connection.Thing.IsAttached": "true"
+        }
+      }
     },
     {
       "Effect": "Allow",
