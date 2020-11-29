@@ -1,11 +1,23 @@
 [
   {
     "name": "Paris - France_0",
+    "city": {
+      "name": "Paris - France",
+      "city": "Paris",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 48.864716,
+        "longitude": 2.349014,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-par"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 48.864716,
       "longitude": 2.349014,
@@ -16,17 +28,29 @@
       "keyPath": "./certs/sensor-fr-par_0-private.pem.key",
       "certPath": "./certs/sensor-fr-par_0-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/b399b668f0baf3476742a47ce11cdae5aa9bd3e622d4e10fee2a0516b0831dbe",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/4e0bb8f4f355c0b8b07009745b1ff791c9258e31f627b964f7f831c60d5f1387",
       "clientId": "sensor-fr-par_0"
     }
   },
   {
     "name": "Paris - France_1",
+    "city": {
+      "name": "Paris - France",
+      "city": "Paris",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 48.864716,
+        "longitude": 2.349014,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-par"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 48.864716,
       "longitude": 2.349014,
@@ -37,17 +61,29 @@
       "keyPath": "./certs/sensor-fr-par_1-private.pem.key",
       "certPath": "./certs/sensor-fr-par_1-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/0198d4d4c33f2e1bec9de2aebef8670fcc4737e909c3db4b6cacf8497b047923",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/8fc4a19a90299ea3073fbab6bdfcf84c9b1032e1c09fa906b271d20593932005",
       "clientId": "sensor-fr-par_1"
     }
   },
   {
     "name": "Paris - France_2",
+    "city": {
+      "name": "Paris - France",
+      "city": "Paris",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 48.864716,
+        "longitude": 2.349014,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-par"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 48.864716,
       "longitude": 2.349014,
@@ -58,17 +94,29 @@
       "keyPath": "./certs/sensor-fr-par_2-private.pem.key",
       "certPath": "./certs/sensor-fr-par_2-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/d098b162f50b6643bf1ac8c0441d803f6fe26eb9deee83a2eca3f0a6a1bb5302",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/0fd36efac26b718aeeba9f60cc4c3435dd43634f85b7ef8cbd4f0bb0ec4f63ad",
       "clientId": "sensor-fr-par_2"
     }
   },
   {
     "name": "Paris - France_3",
+    "city": {
+      "name": "Paris - France",
+      "city": "Paris",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 48.864716,
+        "longitude": 2.349014,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-par"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 48.864716,
       "longitude": 2.349014,
@@ -79,17 +127,29 @@
       "keyPath": "./certs/sensor-fr-par_3-private.pem.key",
       "certPath": "./certs/sensor-fr-par_3-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/ffea97924b25d4a4a775ed4d0344e0457334e5dba9da1cd0b46c8500de9270a4",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/68ad5d31baa4c3933d5126b713d461cb6bc12a96b0b166c06e6f43b52182219a",
       "clientId": "sensor-fr-par_3"
     }
   },
   {
     "name": "Paris - France_4",
+    "city": {
+      "name": "Paris - France",
+      "city": "Paris",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 48.864716,
+        "longitude": 2.349014,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-par"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 48.864716,
       "longitude": 2.349014,
@@ -100,17 +160,29 @@
       "keyPath": "./certs/sensor-fr-par_4-private.pem.key",
       "certPath": "./certs/sensor-fr-par_4-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/78433b8964194324759f01e334fac5474c949cbf7f7ba4bfde3c880bdb934a4a",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/7a50e98a5857314157ba03fe34739cb8fe365eb3b3e92d8cfa9e34661a3539c3",
       "clientId": "sensor-fr-par_4"
     }
   },
   {
     "name": "Paris - France_5",
+    "city": {
+      "name": "Paris - France",
+      "city": "Paris",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 48.864716,
+        "longitude": 2.349014,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-par"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 48.864716,
       "longitude": 2.349014,
@@ -121,17 +193,29 @@
       "keyPath": "./certs/sensor-fr-par_5-private.pem.key",
       "certPath": "./certs/sensor-fr-par_5-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/04c135f2f11612310e8294726d78243d573f956c3b023f2ff4f6b9e530808b1d",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/4d7ef948f901cb57674f043f2a825ce29fec0872ed9eb631f8b99bd621d4f358",
       "clientId": "sensor-fr-par_5"
     }
   },
   {
     "name": "Paris - France_6",
+    "city": {
+      "name": "Paris - France",
+      "city": "Paris",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 48.864716,
+        "longitude": 2.349014,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-par"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 48.864716,
       "longitude": 2.349014,
@@ -142,17 +226,29 @@
       "keyPath": "./certs/sensor-fr-par_6-private.pem.key",
       "certPath": "./certs/sensor-fr-par_6-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/43ebf3ba75b4963728335098e56d2b9dce1a83a20e9bfc0ad103e041d2bb126f",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/b99733ecf02c409837cfaad5cc3927e4053767c9a0114f91080e33cff65b8b7b",
       "clientId": "sensor-fr-par_6"
     }
   },
   {
     "name": "Paris - France_7",
+    "city": {
+      "name": "Paris - France",
+      "city": "Paris",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 48.864716,
+        "longitude": 2.349014,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-par"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 48.864716,
       "longitude": 2.349014,
@@ -163,17 +259,29 @@
       "keyPath": "./certs/sensor-fr-par_7-private.pem.key",
       "certPath": "./certs/sensor-fr-par_7-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/00c07ed78fd5f626c8adc22b57cd7eb1ec0986d4da1003aa7f3a1fa3cda84ca8",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/5bb6da4c339dbef17d698d445e6d08198d9e1893339074013d20a113f127f55e",
       "clientId": "sensor-fr-par_7"
     }
   },
   {
     "name": "Paris - France_8",
+    "city": {
+      "name": "Paris - France",
+      "city": "Paris",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 48.864716,
+        "longitude": 2.349014,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-par"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 48.864716,
       "longitude": 2.349014,
@@ -184,17 +292,29 @@
       "keyPath": "./certs/sensor-fr-par_8-private.pem.key",
       "certPath": "./certs/sensor-fr-par_8-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/f1833fcc37226a56e0bc0eba1a7c11c1a9e4b7667b707b44358fc045be5b98bd",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/3f81f73ffd834416754c858953a8a9c687c86b529e1fc6d31a6bd37a23f48d20",
       "clientId": "sensor-fr-par_8"
     }
   },
   {
     "name": "Paris - France_9",
+    "city": {
+      "name": "Paris - France",
+      "city": "Paris",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 48.864716,
+        "longitude": 2.349014,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-par"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 48.864716,
       "longitude": 2.349014,
@@ -205,17 +325,29 @@
       "keyPath": "./certs/sensor-fr-par_9-private.pem.key",
       "certPath": "./certs/sensor-fr-par_9-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/692f8eaa80da1ad93a4037f13887fee52ec83821ced9b6e54e2131e352dda6e0",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/a26d9b3f68583975d629c6f6cb150456cffda6a7da6c84badc9273bbc7ca0bd7",
       "clientId": "sensor-fr-par_9"
     }
   },
   {
     "name": "Lyon - France_0",
+    "city": {
+      "name": "Lyon - France",
+      "city": "Lyon",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 45.76342,
+        "longitude": 4.834277,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lyo"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 45.76342,
       "longitude": 4.834277,
@@ -226,17 +358,29 @@
       "keyPath": "./certs/sensor-fr-lyo_0-private.pem.key",
       "certPath": "./certs/sensor-fr-lyo_0-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/aa215dca41bc0a067a610627b32e7f6b992daf1904279323c6cdfedaa0052517",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/e53711ec260c55b51c60440f32b40924dff3a362deab7b5f893f445bca55acb4",
       "clientId": "sensor-fr-lyo_0"
     }
   },
   {
     "name": "Lyon - France_1",
+    "city": {
+      "name": "Lyon - France",
+      "city": "Lyon",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 45.76342,
+        "longitude": 4.834277,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lyo"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 45.76342,
       "longitude": 4.834277,
@@ -247,17 +391,29 @@
       "keyPath": "./certs/sensor-fr-lyo_1-private.pem.key",
       "certPath": "./certs/sensor-fr-lyo_1-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/9cfcd0da58ce47cea6b0c0c82c6251df93f3622d2a7d9fe7f536115695de0d02",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/de32dbd20c9998a1f0bd9f08288d3e2c4a4cd07b17c9f54acc197d9d8dd2296a",
       "clientId": "sensor-fr-lyo_1"
     }
   },
   {
     "name": "Lyon - France_2",
+    "city": {
+      "name": "Lyon - France",
+      "city": "Lyon",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 45.76342,
+        "longitude": 4.834277,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lyo"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 45.76342,
       "longitude": 4.834277,
@@ -268,17 +424,29 @@
       "keyPath": "./certs/sensor-fr-lyo_2-private.pem.key",
       "certPath": "./certs/sensor-fr-lyo_2-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/841d43f41f2a2f5bd3f77fa30ae4089f80ea6ab5c41bc1dd5e60e876eef50e34",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/721c5f959039469034b7e37dc1ff2c6f0e7caab7edd0176166ccb241c7fb6a87",
       "clientId": "sensor-fr-lyo_2"
     }
   },
   {
     "name": "Lyon - France_3",
+    "city": {
+      "name": "Lyon - France",
+      "city": "Lyon",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 45.76342,
+        "longitude": 4.834277,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lyo"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 45.76342,
       "longitude": 4.834277,
@@ -289,17 +457,29 @@
       "keyPath": "./certs/sensor-fr-lyo_3-private.pem.key",
       "certPath": "./certs/sensor-fr-lyo_3-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/648dd03ebc3d477d3158047b8d4366ead198b4cba44321bb6f495ee5c0c8f1b3",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/5e6fbc20016f63774ebb401d170634ac3bf4997f090126d5e5f991e883199b38",
       "clientId": "sensor-fr-lyo_3"
     }
   },
   {
     "name": "Lyon - France_4",
+    "city": {
+      "name": "Lyon - France",
+      "city": "Lyon",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 45.76342,
+        "longitude": 4.834277,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lyo"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 45.76342,
       "longitude": 4.834277,
@@ -310,17 +490,29 @@
       "keyPath": "./certs/sensor-fr-lyo_4-private.pem.key",
       "certPath": "./certs/sensor-fr-lyo_4-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/ceb9c7a50252ad629877d922d21486cfa6338b5add5162cd7cd219e7c3a125a4",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/3c7e371cf70ea656cfd04c91051eb39ad03428a23f28cc6d670324220407dcc4",
       "clientId": "sensor-fr-lyo_4"
     }
   },
   {
     "name": "Lyon - France_5",
+    "city": {
+      "name": "Lyon - France",
+      "city": "Lyon",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 45.76342,
+        "longitude": 4.834277,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lyo"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 45.76342,
       "longitude": 4.834277,
@@ -331,17 +523,29 @@
       "keyPath": "./certs/sensor-fr-lyo_5-private.pem.key",
       "certPath": "./certs/sensor-fr-lyo_5-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/a226972ec7352e83a847226fc4dee1d735340e47db2dd4a96616017eddb82500",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/c8f2235ca13451adfa713ac2d291eb2e4fa5ab31a6cede66bfeb628af1dc611a",
       "clientId": "sensor-fr-lyo_5"
     }
   },
   {
     "name": "Lyon - France_6",
+    "city": {
+      "name": "Lyon - France",
+      "city": "Lyon",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 45.76342,
+        "longitude": 4.834277,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lyo"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 45.76342,
       "longitude": 4.834277,
@@ -352,17 +556,29 @@
       "keyPath": "./certs/sensor-fr-lyo_6-private.pem.key",
       "certPath": "./certs/sensor-fr-lyo_6-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/66ce2d121de813ca7da88318d7fe82ca374a7720dd4799644e59369d1e2b0a21",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/491879b34033209204c20ed5043c3d743f15a61796aef782bedf0b4ac1e4bbab",
       "clientId": "sensor-fr-lyo_6"
     }
   },
   {
     "name": "Lyon - France_7",
+    "city": {
+      "name": "Lyon - France",
+      "city": "Lyon",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 45.76342,
+        "longitude": 4.834277,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lyo"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 45.76342,
       "longitude": 4.834277,
@@ -373,17 +589,29 @@
       "keyPath": "./certs/sensor-fr-lyo_7-private.pem.key",
       "certPath": "./certs/sensor-fr-lyo_7-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/d2ffcda5a0d9a9cc7b73b2623ee20fb8098b6be5a9d902d8e23683969fdb6417",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/b7deb6cb57e668a2d353d93e5b92fbe647cf3e6c93ce00db3ea3b94ea506c29b",
       "clientId": "sensor-fr-lyo_7"
     }
   },
   {
     "name": "Lyon - France_8",
+    "city": {
+      "name": "Lyon - France",
+      "city": "Lyon",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 45.76342,
+        "longitude": 4.834277,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lyo"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 45.76342,
       "longitude": 4.834277,
@@ -394,17 +622,29 @@
       "keyPath": "./certs/sensor-fr-lyo_8-private.pem.key",
       "certPath": "./certs/sensor-fr-lyo_8-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/9fb9c7d57b690d9b0bcdd9cf6250484073911225fa28da2a7f6802949a8758ce",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/a9238ca54b0d014c7e4f0cfce7c48e9b00b0e920dd60032759068a5cb36a3db0",
       "clientId": "sensor-fr-lyo_8"
     }
   },
   {
     "name": "Lyon - France_9",
+    "city": {
+      "name": "Lyon - France",
+      "city": "Lyon",
+      "frequency": 1000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 45.76342,
+        "longitude": 4.834277,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lyo"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
     "firmware": "1.12",
-    "frequency": 60000,
+    "frequency": 1000,
     "geo": {
       "latitude": 45.76342,
       "longitude": 4.834277,
@@ -415,12 +655,24 @@
       "keyPath": "./certs/sensor-fr-lyo_9-private.pem.key",
       "certPath": "./certs/sensor-fr-lyo_9-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/3696379b63b5e12d6ff902cbc68e114e0d079fa8af892394a2275a8bf3e9e6e3",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/91bc792317cecd765dff88fcdeb71360cc0e2b61af661dba6ed30767690a3628",
       "clientId": "sensor-fr-lyo_9"
     }
   },
   {
     "name": "Nantes - France_0",
+    "city": {
+      "name": "Nantes - France",
+      "city": "Nantes",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 47.2382007,
+        "longitude": -1.6300958,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-nan"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -436,12 +688,24 @@
       "keyPath": "./certs/sensor-fr-nan_0-private.pem.key",
       "certPath": "./certs/sensor-fr-nan_0-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/7a7c0ebe47997660f95933a27bc59220ebc96142c9a39ac41da535ecf3a73494",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/45ecb1a970a7dcc9764dd99f529da3e46b4582b6381882d4fba048b1a3725ccd",
       "clientId": "sensor-fr-nan_0"
     }
   },
   {
     "name": "Nantes - France_1",
+    "city": {
+      "name": "Nantes - France",
+      "city": "Nantes",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 47.2382007,
+        "longitude": -1.6300958,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-nan"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -457,12 +721,24 @@
       "keyPath": "./certs/sensor-fr-nan_1-private.pem.key",
       "certPath": "./certs/sensor-fr-nan_1-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/b5092803c47563389e25e587f3998801a9ac61ae9005a5f95876405db9450da8",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/65f3ae40429ae6604f0fd60fdf9e7b59b4e0bc4bc6bba0ae70af2077037b4ba1",
       "clientId": "sensor-fr-nan_1"
     }
   },
   {
     "name": "Nantes - France_2",
+    "city": {
+      "name": "Nantes - France",
+      "city": "Nantes",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 47.2382007,
+        "longitude": -1.6300958,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-nan"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -478,12 +754,24 @@
       "keyPath": "./certs/sensor-fr-nan_2-private.pem.key",
       "certPath": "./certs/sensor-fr-nan_2-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/54b88f2e1d6bc14372579edf45ffc8c5d9cdb6b0e420269ed80028ba03d745f5",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/468af0c80a81c7efa5354fbcd4dcc7c992657316083ace85be88ef28ce446033",
       "clientId": "sensor-fr-nan_2"
     }
   },
   {
     "name": "Nantes - France_3",
+    "city": {
+      "name": "Nantes - France",
+      "city": "Nantes",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 47.2382007,
+        "longitude": -1.6300958,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-nan"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -499,12 +787,24 @@
       "keyPath": "./certs/sensor-fr-nan_3-private.pem.key",
       "certPath": "./certs/sensor-fr-nan_3-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/2ac8b6b2326885fdfc229972a556ca94aa8db097e12d2ad1521af1fc0e637678",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/c64df830b304d44af19c650603f63d629f5ebd0d62a9a0fe31f86d10f8e58fa1",
       "clientId": "sensor-fr-nan_3"
     }
   },
   {
     "name": "Nantes - France_4",
+    "city": {
+      "name": "Nantes - France",
+      "city": "Nantes",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 47.2382007,
+        "longitude": -1.6300958,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-nan"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -520,12 +820,24 @@
       "keyPath": "./certs/sensor-fr-nan_4-private.pem.key",
       "certPath": "./certs/sensor-fr-nan_4-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/fa5e3e765e32c2904437f0506f17d25f03714eaccd490f62f73b14fe36c1d21f",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/c4bfc51acf3764bb671f1ccecd9a0627bdd985b40dc584091510eeb0c55c3d36",
       "clientId": "sensor-fr-nan_4"
     }
   },
   {
     "name": "Nantes - France_5",
+    "city": {
+      "name": "Nantes - France",
+      "city": "Nantes",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 47.2382007,
+        "longitude": -1.6300958,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-nan"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -541,12 +853,24 @@
       "keyPath": "./certs/sensor-fr-nan_5-private.pem.key",
       "certPath": "./certs/sensor-fr-nan_5-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/b58a4fd7af9f5f1dc4a37fef4d3002822aab5984a84c6827cb6602bee90ecda3",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/d4873c046604229d31d556bf5ad073d0da15e658c5cfa70a86f5ed9fa6cc00e4",
       "clientId": "sensor-fr-nan_5"
     }
   },
   {
     "name": "Nantes - France_6",
+    "city": {
+      "name": "Nantes - France",
+      "city": "Nantes",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 47.2382007,
+        "longitude": -1.6300958,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-nan"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -562,12 +886,24 @@
       "keyPath": "./certs/sensor-fr-nan_6-private.pem.key",
       "certPath": "./certs/sensor-fr-nan_6-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/8d7cffd2489e25572058dfc0791bdb5d9417c5b4b48d301810a60bb590bab085",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/87e5188de8f5bc85ddf430f6a9de8979d8d5012e08727eb715351c1c533878ec",
       "clientId": "sensor-fr-nan_6"
     }
   },
   {
     "name": "Nantes - France_7",
+    "city": {
+      "name": "Nantes - France",
+      "city": "Nantes",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 47.2382007,
+        "longitude": -1.6300958,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-nan"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -583,12 +919,24 @@
       "keyPath": "./certs/sensor-fr-nan_7-private.pem.key",
       "certPath": "./certs/sensor-fr-nan_7-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/f4b6889239692d899cc6bb54d166059f708d1dfd0be2ed63ae947e753135348e",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/405fb81f721a2482b33ed300993eff498025e571a6aeb817d87545121b59d21a",
       "clientId": "sensor-fr-nan_7"
     }
   },
   {
     "name": "Nantes - France_8",
+    "city": {
+      "name": "Nantes - France",
+      "city": "Nantes",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 47.2382007,
+        "longitude": -1.6300958,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-nan"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -604,12 +952,24 @@
       "keyPath": "./certs/sensor-fr-nan_8-private.pem.key",
       "certPath": "./certs/sensor-fr-nan_8-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/c0aacfe17d821447c2c6789a5f0166bea8de7414c7c828f294592941245a8a49",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/eaecb453c0cd95312778fe9ca12eb4dd9d5776001f9829db4b83d983315d4c8c",
       "clientId": "sensor-fr-nan_8"
     }
   },
   {
     "name": "Nantes - France_9",
+    "city": {
+      "name": "Nantes - France",
+      "city": "Nantes",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 47.2382007,
+        "longitude": -1.6300958,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-nan"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -625,12 +985,24 @@
       "keyPath": "./certs/sensor-fr-nan_9-private.pem.key",
       "certPath": "./certs/sensor-fr-nan_9-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/67932346bbdf80c4aa94f10c8b10fb363b4265b99087c9805a44fde2591bfb6b",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/e46ec294a44f5d29ea3db4eac6738ee84ac8dc60d790c29b8c2c7e7e4ec23836",
       "clientId": "sensor-fr-nan_9"
     }
   },
   {
     "name": "Lille - France_0",
+    "city": {
+      "name": "Lille - France",
+      "city": "Lille",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 50.6310465,
+        "longitude": 2.9771209,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lil"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -646,12 +1018,24 @@
       "keyPath": "./certs/sensor-fr-lil_0-private.pem.key",
       "certPath": "./certs/sensor-fr-lil_0-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/bbca031e18bff451ba6bd60c84d5306cf4298ecf97bbec332b6d1d650da72b43",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/54da678c6043d801d5309340a900511c76a177d2a922e777d9246c5f45c71b2a",
       "clientId": "sensor-fr-lil_0"
     }
   },
   {
     "name": "Lille - France_1",
+    "city": {
+      "name": "Lille - France",
+      "city": "Lille",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 50.6310465,
+        "longitude": 2.9771209,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lil"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -667,12 +1051,24 @@
       "keyPath": "./certs/sensor-fr-lil_1-private.pem.key",
       "certPath": "./certs/sensor-fr-lil_1-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/424851fb7a97a7153faeeb0b1bea766dd96d8ce7dd975ff26f456c9b6b167b3f",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/fea068d849d8febf2741078f9cabf7cc4aa5b82ad46d846dc97b7e984182c720",
       "clientId": "sensor-fr-lil_1"
     }
   },
   {
     "name": "Lille - France_2",
+    "city": {
+      "name": "Lille - France",
+      "city": "Lille",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 50.6310465,
+        "longitude": 2.9771209,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lil"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -688,12 +1084,24 @@
       "keyPath": "./certs/sensor-fr-lil_2-private.pem.key",
       "certPath": "./certs/sensor-fr-lil_2-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/16a6be68afa9b085dc345ee77b9390dbb86dff140c916d69ce036423bbcfa43d",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/4a3b20efa189cfdc2bde449bf3d035b4073d317f511b89ae8e7f0c14c46dd753",
       "clientId": "sensor-fr-lil_2"
     }
   },
   {
     "name": "Lille - France_3",
+    "city": {
+      "name": "Lille - France",
+      "city": "Lille",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 50.6310465,
+        "longitude": 2.9771209,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lil"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -709,12 +1117,24 @@
       "keyPath": "./certs/sensor-fr-lil_3-private.pem.key",
       "certPath": "./certs/sensor-fr-lil_3-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/f741aff08fa869cb6df121e0300c4470f1355dfb62a3434d412b3b9312695ced",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/5be0fee8c5e3aa17e741252a11c2ddc24efd06732cafc3c52744a783ca25dfab",
       "clientId": "sensor-fr-lil_3"
     }
   },
   {
     "name": "Lille - France_4",
+    "city": {
+      "name": "Lille - France",
+      "city": "Lille",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 50.6310465,
+        "longitude": 2.9771209,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lil"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -730,12 +1150,24 @@
       "keyPath": "./certs/sensor-fr-lil_4-private.pem.key",
       "certPath": "./certs/sensor-fr-lil_4-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/885893cb32c8e56c6155ca6f26fa5a15bcf094a1dbb5bda98bee8fb9c280973a",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/dccd9884e3b458b9fc5a194e6b5283d70403f88c814cd8a68fa31048ed0b52a1",
       "clientId": "sensor-fr-lil_4"
     }
   },
   {
     "name": "Lille - France_5",
+    "city": {
+      "name": "Lille - France",
+      "city": "Lille",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 50.6310465,
+        "longitude": 2.9771209,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lil"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -751,12 +1183,24 @@
       "keyPath": "./certs/sensor-fr-lil_5-private.pem.key",
       "certPath": "./certs/sensor-fr-lil_5-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/d81aad65e3767beb2f753b5ef3a601b18f595f6d1c797899274e2721d86c7304",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/d08f9199aef63c2bf7ffa54126a58b791b04f893ce9a00f082cdb94ffe58c235",
       "clientId": "sensor-fr-lil_5"
     }
   },
   {
     "name": "Lille - France_6",
+    "city": {
+      "name": "Lille - France",
+      "city": "Lille",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 50.6310465,
+        "longitude": 2.9771209,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lil"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -772,12 +1216,24 @@
       "keyPath": "./certs/sensor-fr-lil_6-private.pem.key",
       "certPath": "./certs/sensor-fr-lil_6-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/6b86a8979d38d12233ee78925d33b801150fb23b893cba2723c760a92ff1fe9b",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/1303f7bbd41920b63ab743a9993d20dd2b55f974bdaf2fd4c352a091c219114c",
       "clientId": "sensor-fr-lil_6"
     }
   },
   {
     "name": "Lille - France_7",
+    "city": {
+      "name": "Lille - France",
+      "city": "Lille",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 50.6310465,
+        "longitude": 2.9771209,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lil"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -793,12 +1249,24 @@
       "keyPath": "./certs/sensor-fr-lil_7-private.pem.key",
       "certPath": "./certs/sensor-fr-lil_7-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/13185c0a363ccc375e3e4ac0b680b26c13a389dc820f8afb3b5102521c3455c4",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/86a823d13e037052cb9e5dc53563293cf3c9ef553dc97ce9b8c4b6f51cf21165",
       "clientId": "sensor-fr-lil_7"
     }
   },
   {
     "name": "Lille - France_8",
+    "city": {
+      "name": "Lille - France",
+      "city": "Lille",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 50.6310465,
+        "longitude": 2.9771209,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lil"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -814,12 +1282,24 @@
       "keyPath": "./certs/sensor-fr-lil_8-private.pem.key",
       "certPath": "./certs/sensor-fr-lil_8-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/45667f2d392097ecea568702186fca48b7d4613fa3a6cded0fc2a9db78878ce1",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/e7109f6f01b4c858f8f8658d97be2b163e807497e64f17e6539d487b73315a6f",
       "clientId": "sensor-fr-lil_8"
     }
   },
   {
     "name": "Lille - France_9",
+    "city": {
+      "name": "Lille - France",
+      "city": "Lille",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 50.6310465,
+        "longitude": 2.9771209,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-lil"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -835,12 +1315,24 @@
       "keyPath": "./certs/sensor-fr-lil_9-private.pem.key",
       "certPath": "./certs/sensor-fr-lil_9-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/1b44000ba93c96b863ed316b09e458144f9d277d0c1df6b9534ae666e862d0a3",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/43617e39350ea63eb7f831bb8e14585b8ff05deb52a468f8685a07418e285bd9",
       "clientId": "sensor-fr-lil_9"
     }
   },
   {
     "name": "Toulouse - France_0",
+    "city": {
+      "name": "Toulouse - France",
+      "city": "Toulouse",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 43.6006785,
+        "longitude": 1.3626298,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-tou"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -856,12 +1348,24 @@
       "keyPath": "./certs/sensor-fr-tou_0-private.pem.key",
       "certPath": "./certs/sensor-fr-tou_0-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/916aa6cefe6ab39c4639c160457f066c36bc5025fc726a4d8f199ca6837861c5",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/a091cad3f986cdb6847f60acc3a613beed9c9f54a14cd16b0da6dee48e4f3278",
       "clientId": "sensor-fr-tou_0"
     }
   },
   {
     "name": "Toulouse - France_1",
+    "city": {
+      "name": "Toulouse - France",
+      "city": "Toulouse",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 43.6006785,
+        "longitude": 1.3626298,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-tou"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -877,12 +1381,24 @@
       "keyPath": "./certs/sensor-fr-tou_1-private.pem.key",
       "certPath": "./certs/sensor-fr-tou_1-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/dbbb3d3b4bdbdecdb2d3672e121791b19d436593ca5b06360c0a65790a5be268",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/751e8c83af923205b6f4c18188cb03aa81f6e770094f11627f66f3034576c701",
       "clientId": "sensor-fr-tou_1"
     }
   },
   {
     "name": "Toulouse - France_2",
+    "city": {
+      "name": "Toulouse - France",
+      "city": "Toulouse",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 43.6006785,
+        "longitude": 1.3626298,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-tou"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -898,12 +1414,24 @@
       "keyPath": "./certs/sensor-fr-tou_2-private.pem.key",
       "certPath": "./certs/sensor-fr-tou_2-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/ce2a5a36a2aa7758ba71b403a0ee6813cfe69df562cdb1aca40e42e12e0face2",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/c8b0016805a8d20a803ce3ff7b8461bb7cb03d3af8896f5fdb2752169622e74a",
       "clientId": "sensor-fr-tou_2"
     }
   },
   {
     "name": "Toulouse - France_3",
+    "city": {
+      "name": "Toulouse - France",
+      "city": "Toulouse",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 43.6006785,
+        "longitude": 1.3626298,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-tou"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -919,12 +1447,24 @@
       "keyPath": "./certs/sensor-fr-tou_3-private.pem.key",
       "certPath": "./certs/sensor-fr-tou_3-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/5d47b12fadac697091a357d87a6c6abd9d2840745a83937f450997b1e0f4ab89",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/849d9c93ef37ba934130fd40bcb0e7dd8910ffb54a582eec6999c87ac4514ff7",
       "clientId": "sensor-fr-tou_3"
     }
   },
   {
     "name": "Toulouse - France_4",
+    "city": {
+      "name": "Toulouse - France",
+      "city": "Toulouse",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 43.6006785,
+        "longitude": 1.3626298,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-tou"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -940,12 +1480,24 @@
       "keyPath": "./certs/sensor-fr-tou_4-private.pem.key",
       "certPath": "./certs/sensor-fr-tou_4-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/3489fef1ef75d4b330def0ef80b9d5977a969e8a0058565edec828cd1142ca16",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/bc734e3df30464e747bddd5b6e47bb4dcb94ba8021c942169de8834fdce32c9b",
       "clientId": "sensor-fr-tou_4"
     }
   },
   {
     "name": "Toulouse - France_5",
+    "city": {
+      "name": "Toulouse - France",
+      "city": "Toulouse",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 43.6006785,
+        "longitude": 1.3626298,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-tou"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -961,12 +1513,24 @@
       "keyPath": "./certs/sensor-fr-tou_5-private.pem.key",
       "certPath": "./certs/sensor-fr-tou_5-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/ac015f8574b95ca3fa99b4833c11dbdcd0add768d538c17e31b9d80e6e182027",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/7e002c0f4622c19454e567f6571a44913b99dc1ec2350ef419bbf6fd09a7fb10",
       "clientId": "sensor-fr-tou_5"
     }
   },
   {
     "name": "Toulouse - France_6",
+    "city": {
+      "name": "Toulouse - France",
+      "city": "Toulouse",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 43.6006785,
+        "longitude": 1.3626298,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-tou"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -982,12 +1546,24 @@
       "keyPath": "./certs/sensor-fr-tou_6-private.pem.key",
       "certPath": "./certs/sensor-fr-tou_6-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/e33f5c8f55807329d7c210cbf262545ea36f6503728b525360d2a21003126f73",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/f6507bca52a578ee62ef4e913652465c3eb5d70266be2b2239ef2da0c695969e",
       "clientId": "sensor-fr-tou_6"
     }
   },
   {
     "name": "Toulouse - France_7",
+    "city": {
+      "name": "Toulouse - France",
+      "city": "Toulouse",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 43.6006785,
+        "longitude": 1.3626298,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-tou"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1003,12 +1579,24 @@
       "keyPath": "./certs/sensor-fr-tou_7-private.pem.key",
       "certPath": "./certs/sensor-fr-tou_7-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/5d0324e759e4f53d649d7b8a5830928b740282c8bec06549586a2b39527ed04f",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/c4fa312390ef20d2cece7c193b41646a200e2c5005f7308e2619a4bcc9c931b7",
       "clientId": "sensor-fr-tou_7"
     }
   },
   {
     "name": "Toulouse - France_8",
+    "city": {
+      "name": "Toulouse - France",
+      "city": "Toulouse",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 43.6006785,
+        "longitude": 1.3626298,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-tou"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1024,12 +1612,24 @@
       "keyPath": "./certs/sensor-fr-tou_8-private.pem.key",
       "certPath": "./certs/sensor-fr-tou_8-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/f5f056d4b2c77a9647e5bea75cee681ab45354f78c0e6098eb451192a757c0b6",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/7f7d5b6df6aaaa13df563b9f47e5cea032b066fd2a95d61e420769919d128267",
       "clientId": "sensor-fr-tou_8"
     }
   },
   {
     "name": "Toulouse - France_9",
+    "city": {
+      "name": "Toulouse - France",
+      "city": "Toulouse",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 43.6006785,
+        "longitude": 1.3626298,
+        "radius": 500
+      },
+      "clientId": "sensor-fr-tou"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1045,12 +1645,24 @@
       "keyPath": "./certs/sensor-fr-tou_9-private.pem.key",
       "certPath": "./certs/sensor-fr-tou_9-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/995c494d6bb8afefd3db8b14df40670e837b81546ee019d8f71a0645bc6d1338",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/34d0d2a937ad2cf510282acfa7839d6d27081d95142e2f5f666c3fea840c96bd",
       "clientId": "sensor-fr-tou_9"
     }
   },
   {
     "name": "Londres - England_0",
+    "city": {
+      "name": "Londres - England",
+      "city": "Londres",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 51.5253176,
+        "longitude": -0.1588742,
+        "radius": 500
+      },
+      "clientId": "sensor-uk-lon"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1066,12 +1678,24 @@
       "keyPath": "./certs/sensor-uk-lon_0-private.pem.key",
       "certPath": "./certs/sensor-uk-lon_0-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/36d581cf26a7a5425560b69d9a5c7f7f00e10c9649cf8bcbe6abca625341a2c7",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/5fcbf7c46e2508cd6130013846391a35b778b3d139d967bfbb6d642b865a8230",
       "clientId": "sensor-uk-lon_0"
     }
   },
   {
     "name": "Londres - England_1",
+    "city": {
+      "name": "Londres - England",
+      "city": "Londres",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 51.5253176,
+        "longitude": -0.1588742,
+        "radius": 500
+      },
+      "clientId": "sensor-uk-lon"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1087,12 +1711,24 @@
       "keyPath": "./certs/sensor-uk-lon_1-private.pem.key",
       "certPath": "./certs/sensor-uk-lon_1-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/5fe50aeadc4e8db68500d978d2024c25dfa817a220095a0ec0e0f53d3df13d6e",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/b1ed078b89f15f8ba41aa1c87b114d726c27b9bb1a369c997fcc43f592ab1721",
       "clientId": "sensor-uk-lon_1"
     }
   },
   {
     "name": "Londres - England_2",
+    "city": {
+      "name": "Londres - England",
+      "city": "Londres",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 51.5253176,
+        "longitude": -0.1588742,
+        "radius": 500
+      },
+      "clientId": "sensor-uk-lon"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1108,12 +1744,24 @@
       "keyPath": "./certs/sensor-uk-lon_2-private.pem.key",
       "certPath": "./certs/sensor-uk-lon_2-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/7e06cbaf3427cb8a9cda1d801bed6a305f51758331390ab749e02160eefde860",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/bdf35610284574ba2f4ac6aa04d0882c89bf47b5c92701696a602fd08c200d64",
       "clientId": "sensor-uk-lon_2"
     }
   },
   {
     "name": "Londres - England_3",
+    "city": {
+      "name": "Londres - England",
+      "city": "Londres",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 51.5253176,
+        "longitude": -0.1588742,
+        "radius": 500
+      },
+      "clientId": "sensor-uk-lon"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1129,12 +1777,24 @@
       "keyPath": "./certs/sensor-uk-lon_3-private.pem.key",
       "certPath": "./certs/sensor-uk-lon_3-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/66f18b217c692ab57b73e54ba2527876ace5b993407a57df43a6d387393e2267",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/f25f1c002e1d00a359e015b07e2675ac3b2d12e629ff11ecb40890259b99ac24",
       "clientId": "sensor-uk-lon_3"
     }
   },
   {
     "name": "Londres - England_4",
+    "city": {
+      "name": "Londres - England",
+      "city": "Londres",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 51.5253176,
+        "longitude": -0.1588742,
+        "radius": 500
+      },
+      "clientId": "sensor-uk-lon"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1150,12 +1810,24 @@
       "keyPath": "./certs/sensor-uk-lon_4-private.pem.key",
       "certPath": "./certs/sensor-uk-lon_4-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/47dd1d68e18b3b2523c2763e71efc0b341572ce3ffa243cd4fa247dca645709f",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/96034955c2b5779de2e34b7842216d3cd3a302026b5758dfa882405c22b54c93",
       "clientId": "sensor-uk-lon_4"
     }
   },
   {
     "name": "Londres - England_5",
+    "city": {
+      "name": "Londres - England",
+      "city": "Londres",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 51.5253176,
+        "longitude": -0.1588742,
+        "radius": 500
+      },
+      "clientId": "sensor-uk-lon"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1171,12 +1843,24 @@
       "keyPath": "./certs/sensor-uk-lon_5-private.pem.key",
       "certPath": "./certs/sensor-uk-lon_5-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/39e899e44d20f6bc2c35bbb57fb1898d40b9d3cee46f9dde1d32785c1f3e54bd",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/eaa7f6c2d2a1d8620211a8428d830205782081f3e483ca4cd819685da108de74",
       "clientId": "sensor-uk-lon_5"
     }
   },
   {
     "name": "Londres - England_6",
+    "city": {
+      "name": "Londres - England",
+      "city": "Londres",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 51.5253176,
+        "longitude": -0.1588742,
+        "radius": 500
+      },
+      "clientId": "sensor-uk-lon"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1192,12 +1876,24 @@
       "keyPath": "./certs/sensor-uk-lon_6-private.pem.key",
       "certPath": "./certs/sensor-uk-lon_6-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/dfe0170f3575ac144e7df066a53cfabb2e04bccee756125b0776a30738e99dae",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/0e64f3e362029257f7edbe94be0178e1b7f7dd299e1ca506d2a31e1f09767b5d",
       "clientId": "sensor-uk-lon_6"
     }
   },
   {
     "name": "Londres - England_7",
+    "city": {
+      "name": "Londres - England",
+      "city": "Londres",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 51.5253176,
+        "longitude": -0.1588742,
+        "radius": 500
+      },
+      "clientId": "sensor-uk-lon"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1213,12 +1909,24 @@
       "keyPath": "./certs/sensor-uk-lon_7-private.pem.key",
       "certPath": "./certs/sensor-uk-lon_7-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/5d23fe6e4f2a41812a42c56f3dae65f625b47bac26949dc6d066c779498d8045",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/3cc376e83df0777661369327f4e316947758ab9c9d296ed5e6da008d3424e263",
       "clientId": "sensor-uk-lon_7"
     }
   },
   {
     "name": "Londres - England_8",
+    "city": {
+      "name": "Londres - England",
+      "city": "Londres",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 51.5253176,
+        "longitude": -0.1588742,
+        "radius": 500
+      },
+      "clientId": "sensor-uk-lon"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1234,12 +1942,24 @@
       "keyPath": "./certs/sensor-uk-lon_8-private.pem.key",
       "certPath": "./certs/sensor-uk-lon_8-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/be0f2b9838fa45f9980e2d10f80b6a04fbc4e6480c4b91f648ad64aad396cbbb",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/d449f0df1c7b749053fc79864302a761326ff51cf82030886121791c0eec945d",
       "clientId": "sensor-uk-lon_8"
     }
   },
   {
     "name": "Londres - England_9",
+    "city": {
+      "name": "Londres - England",
+      "city": "Londres",
+      "frequency": 60000,
+      "sensors": 10,
+      "geo": {
+        "latitude": 51.5253176,
+        "longitude": -0.1588742,
+        "radius": 500
+      },
+      "clientId": "sensor-uk-lon"
+    },
     "thingTypeName": "TEMPERATURE_SENSOR",
     "manufacturer": "STmicroelectronics",
     "model": "WQ201",
@@ -1255,7 +1975,7 @@
       "keyPath": "./certs/sensor-uk-lon_9-private.pem.key",
       "certPath": "./certs/sensor-uk-lon_9-certificate.pem.crt",
       "caPath": "./certs/AmazonRootCA1.pem",
-      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/a37a6929970071975bf052de19958d1a63964e5f445d8fdf49ac06769c470e79",
+      "certificateArn": "arn:aws:iot:eu-west-1:081895476357:cert/11d6c6e1a43ef3b8301becceb3757a04e7925c4ab4308625bc9b906a9d128040",
       "clientId": "sensor-uk-lon_9"
     }
   }

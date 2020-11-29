@@ -13,7 +13,8 @@ const sensors = [
             "name": "France",
             "cities": [{
                 "name": "Paris - France",
-                "frequency": 60000,
+                "city": "Paris",
+                "frequency": 1000,
                 "sensors": 10,
                 "geo": {
                     "latitude": 48.864716,
@@ -24,7 +25,8 @@ const sensors = [
             },
             {
                 "name": "Lyon - France",
-                "frequency": 60000,
+                "city": "Lyon",
+                "frequency": 1000,
                 "sensors": 10,
                 "geo": {
                     "latitude": 45.76342,
@@ -35,6 +37,7 @@ const sensors = [
             },
             {
                 "name": "Nantes - France",
+                "city": "Nantes",
                 "frequency": 60000,
                 "sensors": 10,
                 "geo": {
@@ -46,6 +49,7 @@ const sensors = [
             },
             {
                 "name": "Lille - France",
+                "city": "Lille",
                 "frequency": 60000,
                 "sensors": 10,
                 "geo": {
@@ -57,6 +61,7 @@ const sensors = [
             },
             {
                 "name": "Toulouse - France",
+                "city": "Toulouse",
                 "frequency": 60000,
                 "sensors": 10,
                 "geo": {
@@ -72,6 +77,7 @@ const sensors = [
             "name": "UK",
             "cities": [{
                 "name": "Londres - England",
+                "city": "Londres",
                 "frequency": 60000,
                 "sensors": 10,
                 "geo": {
@@ -98,6 +104,7 @@ for (var i = 0; i < sensors.length; i++) {
             for (var b = 0; b < length; b++) {
                 myObject.push({
                     "name": city.name + "_" + b,
+                    "city": city,
                     "thingTypeName": SENSOR_THING_TYPE_NAME,
                     "manufacturer": SENSOR_MANUFACTURER,
                     "model": SENSOR_MODEL,

@@ -12,8 +12,8 @@ type SensorValue @model (subscriptions: null)
   pressure: Float!
   latitude: Float!
   longitude: Float!
-  status: Int!
-  timestamp: AWSTimestamp!
+  status: Int
+  timestamp: AWSTimestamp
 }
 
 type Subscription {

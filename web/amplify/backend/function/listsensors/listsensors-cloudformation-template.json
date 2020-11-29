@@ -68,7 +68,7 @@
         "Timeout": "25",
         "Code": {
           "S3Bucket": "amplify-iotdashboard-octank-112944-deployment",
-          "S3Key": "amplify-builds/listsensors-4855756143682f436f64-build.zip"
+          "S3Key": "amplify-builds/listsensors-464a3177383551513058-build.zip"
         }
       }
     },

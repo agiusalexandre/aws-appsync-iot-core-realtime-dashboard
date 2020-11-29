@@ -12,6 +12,7 @@ var shadowDocument = {
     state: {
         reported: {
             name: "",
+            city: "",
             enabled: true,
             geo: {
                 latitude: 0,
@@ -45,6 +46,9 @@ async function run(sensor) {
         shadowDocument.state.reported.enabled = true;
         shadowDocument.state.reported.geo.latitude = sensor.geo.latitude;
         shadowDocument.state.reported.geo.longitude = sensor.geo.longitude;
+        shadowDocument.state.reported.city = sensor.city.city;
+
+        console.log(sensor.city.city);
 
         device.publish(topic, JSON.stringify(shadowDocument));
 

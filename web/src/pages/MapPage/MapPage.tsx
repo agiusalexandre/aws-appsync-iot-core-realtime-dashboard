@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 import { API, graphqlOperation } from 'aws-amplify';
 import { useHistory } from 'react-router-dom'
 import { makeStyles } from '@material-ui/core';
@@ -41,20 +41,22 @@ interface ISensorsSubscriptionResponse {
 }
 
 const MapPage: React.FC = () => {
-  
+
+  const mapRef = useRef();
+
   const history = useHistory();
   const classes = useStyles();
   const maxZoom = 1;
 
   //state variables
   const [viewPort, setViewPort] = useState<IViewPort>({
-        latitude: 48.864716,
-        longitude: 2.349014,
-        zoom: maxZoom,
-        bearing: 1,
-        pitch: 1
-      }
-  ); 
+    latitude: 48.864716,
+    longitude: 2.349014,
+    zoom: maxZoom,
+    bearing: 1,
+    pitch: 1
+  }
+  );
 
   const [sensors, setSensors] = useState<Array<ISensor>>([]);
   const [readyToSubscribe, setReadyToSubscribe] = useState(false);
@@ -63,7 +65,7 @@ const MapPage: React.FC = () => {
   useEffect(() => {
 
     const initSensors = async () => {
-      
+
       console.log('fetching sensors');
 
       try {
@@ -88,21 +90,21 @@ const MapPage: React.FC = () => {
   //subscribe to changes in sensor values
   useEffect(() => {
 
-    if (readyToSubscribe){
+    if (readyToSubscribe) {
 
       console.log('start subscription to sensors');
-      
+
       const subscriber = API.graphql(graphqlOperation(onCreateSensorValues)).subscribe({
         next: (response: ISensorsSubscriptionResponse) => {
 
           //update the sensor's status in state
           if (response.value.data.onCreateSensorValues) {
-            
+
             var newSensors = [...sensors];
-        
+
             for (let item of newSensors) {
               console.log(item);
-              if (item.sensorId === response.value.data.onCreateSensorValues.sensorId){
+              if (item.sensorId === response.value.data.onCreateSensorValues.sensorId) {
                 item.status = response.value.data.onCreateSensorValues.status;
                 item.geo.latitude = response.value.data.onCreateSensorValues.latitude;
                 item.geo.longitude = response.value.data.onCreateSensorValues.longitude;
@@ -127,18 +129,20 @@ const MapPage: React.FC = () => {
       }
     }
 
-  // eslint-disable-next-line 
+    // eslint-disable-next-line 
   }, [readyToSubscribe]);
 
-  const updateViewPort = (viewPort : IViewPort) => {
+  const updateViewPort = (viewPort: IViewPort) => {
+
     if (viewPort.zoom >= maxZoom) {
       setViewPort(viewPort);
-    } 
+    }
   }
 
-  const handleSensorClick = (id : string) => {
+  const handleSensorClick = (id: string) => {
     history.push('/sensor/' + id)
   }
+
 
   return (
     <div>
@@ -152,17 +156,17 @@ const MapPage: React.FC = () => {
       >
 
         {sensors.map((sensor) =>
-            (
-              <SensorMarker 
-                key={sensor.sensorId}
-                id={sensor.sensorId}
-                latitude={sensor.geo.latitude}
-                longitude={sensor.geo.longitude}
-                color={GetSensorStatusColor(sensor.status)}
-                onSensorClick={handleSensorClick}
-              />
-            )
+          (
+            <SensorMarker
+              key={sensor.sensorId}
+              id={sensor.sensorId}
+              latitude={sensor.geo.latitude}
+              longitude={sensor.geo.longitude}
+              color={GetSensorStatusColor(sensor.status)}
+              onSensorClick={handleSensorClick}
+            />
           )
+        )
         }
 
         <div className={classes.navStyle}>
